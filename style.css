@@ -1,0 +1,16 @@
+
+.navbar a.navbar-brand, h1{
+    color:#17a2b8;
+}
+h1{
+    font-family: 'Baloo Bhai', cursive;
+}
+div.card img, div.carousel{
+    margin:0 auto;
+}
+.gym, .wii{
+    width:95%;
+}
+.brasil{
+    width:97%;
+}
