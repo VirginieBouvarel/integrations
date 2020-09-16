@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+:root {
+	/* colors */
+	--green : #005d2e;
+	--green-light:#0b9044;
+	/* fonts */
+}
 *, *:before, *:after {
 	margin:0;
 	padding:0;
@@ -32,7 +38,7 @@ a:hover {
 	color:#fff;
 	border-radius:4px;
 	text-transform:uppercase;
-	background-color:#2196f3;
+	background-color:var(--green-light);
 	font-weight:800;
 }
 .section {
@@ -58,7 +64,7 @@ a:hover {
 hr {
 	width:15rem;
 	height:2px;
-	background-color: #2196f3;
+	background-color: var(--green-light);
 	margin:0 auto 8rem;
 	border:none;
 }
@@ -72,26 +78,31 @@ hr {
 * HEADER
 */
 .header {
-	background-image: url('../img/hero.jpg');
+	background-image: url('../img/web/hero-banner.jpg');
 	background-size:cover;
-	background-color: #2196f3;
+	background-color: var(--green-light);
 	min-height:100vh;
 }
 .navbar {
+	background-color:#fff;
 	width:100%;
-	padding:3.5rem 10rem 0;
+	padding: 0.5rem 3rem;
 	display:flex;
 	justify-content:flex-end;
 	align-items:center;
 }
 .navbar__logo {
-	font-family:'Quicksand', sans-serif;
+	width:25rem;
 	margin-right: auto;
+}
+.logo {
+	width:100%;
 }
 .navbar__link {
 	margin:0 1.5rem;
-	color:#fff;
+	color:var(--green);;
 }
+
 .hero-banner {
 	color:#fff;
 	text-align:center;
@@ -135,7 +146,7 @@ hr {
 }
 .features__icon {
 	font-size:5rem;
-	color:#2196f3;
+	color:var(--green-light);
 	margin-bottom:2.5rem;
 }
 .features__title {
@@ -193,9 +204,6 @@ hr {
 	.section {
 		padding:10rem 5rem;
 	}
-	.navbar {
-		padding: 2rem 5rem; 
-	}
 	.grid__img {
 		width:100%;
 	}
@@ -219,9 +227,13 @@ hr {
 	}
 	.navbar {
 		flex-direction:column;
+		padding: 2rem 5rem; 
 	}
 	.navbar__logo {
 		margin: 0 0 1.5rem 0;
+	}
+	.logo {
+		margin-left:-1rem;
 	}
 	.hero-banner {
 		min-height:60rem;
