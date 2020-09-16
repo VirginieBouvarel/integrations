@@ -1,0 +1,263 @@
+/**
+* GLOBALS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*, *:before, *:after {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html {
+	font-size:62.5%;
+	color:#555;
+}
+body {
+	font: normal 1.6rem sans-serif;
+
+}
+ul, li {
+	list-style-type:none;
+}
+a {
+	text-decoration:none;
+	color:inherit;
+	opacity:0.8;
+}
+a:hover {
+	opacity:1;
+}
+.btn {
+	color:#fff;
+	border-radius:4px;
+	text-transform:uppercase;
+	background-color:#2196f3;
+	font-weight:800;
+}
+.section {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:12.5rem 10rem;
+}
+.h2-like {
+	color:#414a4f;
+	text-transform: capitalize;
+	font:bold 3.2rem 'Open Sans', sans-serif;
+	margin-bottom:3.5rem;
+	text-align:center;
+}
+.text {
+	max-width:80rem;
+	text-align:center;
+	margin-bottom:3.5rem;
+	padding:0 2rem;
+	line-height:2;
+}
+hr {
+	width:15rem;
+	height:2px;
+	background-color: #2196f3;
+	margin:0 auto 8rem;
+	border:none;
+}
+.grid {
+	width:100%;
+	display:flex;
+	flex-flow:row wrap;	
+}
+
+/**
+* HEADER
+*/
+.header {
+	background-image: url('../img/hero.jpg');
+	background-size:cover;
+	background-color: #2196f3;
+	min-height:100vh;
+}
+.navbar {
+	width:100%;
+	padding:3.5rem 10rem 0;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.navbar__logo {
+	font-family:'Quicksand', sans-serif;
+	margin-right: auto;
+}
+.navbar__link {
+	margin:0 1.5rem;
+	color:#fff;
+}
+.hero-banner {
+	color:#fff;
+	text-align:center;
+}
+.hero-banner__title {
+	font: bold 6rem 'Open Sans', sans-serif;
+	margin-bottom: 1.5rem;
+}
+.hero-banner__punchline {
+	font: normal 2.8rem 'Open Sans', sans-serif;
+	margin-bottom: 4.6rem;
+}
+.hero-banner__btn {
+	padding:2rem 4.6rem;
+}
+
+/*SECTION OUR-WORK*/
+
+.grid__img {
+	padding:2rem;
+	height:35rem;
+	object-fit:cover;
+
+}
+.grid__img--small {
+	width:40%;
+}
+.grid__img--large {
+	width:60%;
+}
+
+/* SECTION FEATURES */
+.features {
+	background-color: #f7f7f7;
+}
+.features__item {
+	padding:0 3rem;
+	flex-basis:33%;
+	text-align:center;
+	margin:0 auto;
+}
+.features__icon {
+	font-size:5rem;
+	color:#2196f3;
+	margin-bottom:2.5rem;
+}
+.features__title {
+	color:#555;
+	font-size:2rem;
+	margin-bottom:2.5rem;
+}
+
+/* SECTION REVIEWS */
+
+.reviews__quote {
+	text-align:center;
+	width:80%;
+	font-size:2.2rem;
+	font-weight:300;
+	line-height:1.5;
+	margin-bottom:2rem;
+
+}
+
+.reviews__author {
+	font-size:1.8rem;
+	margin-bottom:5rem;
+}
+
+.reviws__author:last-child {
+	margin-bottom:0;
+}
+
+/*SECTION CONTACT */
+.contact {
+	background-color: #f7f7f7;
+}
+.contact__form {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+	max-width:80rem;
+	width:80%;
+}
+.contact__email {
+	padding:1.5rem;
+	flex:1;
+	margin-right:3rem;
+	font-size:1.8rem;
+	color:#555;
+}
+.contact__btn {
+	padding:1.8rem 4.2rem;
+} 
+
+/*RWD*/
+@media screen and (max-width:1000px) {
+	.section {
+		padding:10rem 5rem;
+	}
+	.navbar {
+		padding: 2rem 5rem; 
+	}
+	.grid__img {
+		width:100%;
+	}
+	.features__item {
+		flex-basis:70%;
+		margin-bottom:6.5rem;
+	}
+	.features__item:last-child {
+		margin-bottom:0;
+	}
+	.reviews__quote {
+		font-size:1.8rem;
+	}
+	.reviews__author {
+		font-size:1.4rem;
+	}
+}
+@media screen and (max-width:800px) {
+	.section {
+		padding: 8rem 3rem;
+	}
+	.navbar {
+		flex-direction:column;
+	}
+	.navbar__logo {
+		margin: 0 0 1.5rem 0;
+	}
+	.hero-banner {
+		min-height:60rem;
+	}
+	.hero-banner__title {
+		font-size:4.8rem;
+	}
+	.hero-banner__punchline {
+		font-size:2.4rem;
+	}
+	.hero-banner__btn {
+		padding:1.5rem 4rem;
+	}
+	.contact__email {
+		flex-basis:100%;
+		margin:0 0 2rem 0;
+	}
+	
+}
+@media screen and (max-width:700px) {
+	.features__item {
+		flex-basis:100%;
+	}
+}
+@media screen and (max-width:500px) {
+	.navbar__link {
+		margin:0 0.3rem;
+	}
+}
+@media screen and (max-width:350px) {
+	.navbar__link:not(:only-child) {
+		font-size:1.3rem;
+	}
+	contact__btn {
+		font-size:1.3rem;
+	}
+}
+
+
