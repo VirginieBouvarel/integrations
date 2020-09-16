@@ -302,26 +302,27 @@ hr {
 	
 }
 @media screen and (max-width:700px) {
+	.navbar__link {
+		margin:0 0.3rem;
+	}
 	.features__item {
 		flex-basis:100%;
 	}
 }
 @media screen and (max-width:500px) {
-	.navbar__link {
-		margin:0 0.3rem;
-	}
+
 	.hero-banner {
 		padding-top:15rem;
 	}
 }
-@media screen and (max-width:350px) {
+@media screen and (max-width:380px) {
 	.navbar {
 		padding: 2rem 3rem 4rem; 
 	}
 	.navbar__link:not(:only-child) {
 		font-size:1.3rem;
 	}
-	contact__btn {
+	.contact__btn {
 		font-size:1.3rem;
 	}
 }
