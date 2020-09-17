@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- icons fontawesome -->
   <script src="https://kit.fontawesome.com/0ac17cb549.js"></script>
+  <!-- swiper.css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- custom styles-->
   <link rel="stylesheet" href="css/style.css">
   <title>Site Responsive de A à Z</title>
@@ -47,7 +49,7 @@
       <li class="grid__item grid__item--large">
         <img class="grid__img" src="img/client/container-cmacgm.jpg" alt="cma cgm">
         <div class="grid__overlay grid__overlay--large">
-          <p class="grid__title">Percolateur a café sur mesure</p>
+          <p class="grid__title">Percolateurs à café sur mesure</p>
         </div>
       </li>
       <li class="grid__item grid__item--large">
@@ -93,19 +95,55 @@
     </ul>
   </section>
 
-  <section class="section reviews">
-    <h2 class="h2-like">What others say:</h2>
-    <p class="reviews__quote text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem magnam in iste quo ullam
-      deleniti facilis totam nam accusantium temporibus!</p>
-    <p class="reviews__author">- Patrick Farell</p>
+  <section class="section gamme">
+    <h2 class="h2-like">Notre gamme</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolores quo adipisci optio nobis
+      voluptas sequi error deserunt. Libero animi id corporis. Facilis perferendis asperiores, veniam vero doloremque
+      maiores delectus.</p>
+    <hr>
+    <!-- Swiper -->
 
-    <p class="reviews__quote text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem magnam in iste quo ullam
-      deleniti facilis totam nam accusantium temporibus!</p>
-    <p class="reviews__author">- Georges Smith</p>
 
-    <p class="reviews__quote text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem magnam in iste quo ullam
-      deleniti facilis totam nam accusantium temporibus!</p>
-    <p class="reviews__author">- Kevin Statham</p>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+              <img class="swiper-slide__img" src="img/web/container-ship-with-plane.jpg" alt="plane">
+              <h3 class="swiper-slide__title">Solutions conteneurisées</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide__img" src="img/web/container-ship.jpg" alt="container-ship">
+            <h3 class="swiper-slide__title">Equipements de boulangerie</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide__img" src="img/web/containers-pyramide.jpg" alt="containers-pyramide">
+            <h3 class="swiper-slide__title">Chambres froides modulaires</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide__img" src="img/web/container-ship-with-plane.jpg" alt="plane">
+            <h3 class="swiper-slide__title">Systèmes de béquilles et de levage</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide__img" src="img/web/container-ship.jpg" alt="container-ship">
+            <h3 class="swiper-slide__title">Accessoires de cuisine</h3>
+          </div>
+
+
+
+
+         
+      </div>
+    </div>  
+
+
+
+    <!-- end Swiper -->
   </section>
 
   <section class="section contact">
@@ -117,7 +155,9 @@
       <a class="contact__btn btn"href="#">Subscribe Now</a>
     </form>
   </section>
-
+  <!-- swiper.js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

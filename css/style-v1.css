@@ -198,18 +198,17 @@ hr {
 }
 
 /* SECTION GAMME */
+
 .swiper-container {
-	width: 100%;
+    width: 80%;
 	height:50rem;
 	padding: 5rem 0;  
-	border:1px solid red;
 }
 .swiper-slide {
 	background-position: center;
 	background-size: cover;
 	width: 60rem;
 	height: 40rem;
-	border:1px solid green;
 }
 .swiper-slide__img {
 	width:100%;
@@ -217,7 +216,6 @@ hr {
 	overflow:hidden;
 }
 .swiper-slide__title {
-	
 	background-color: rgb(11,144,68);
 	color:#fff;
 	text-align:center;
@@ -248,7 +246,6 @@ hr {
 } 
 
 /*RWD*/
-
 @media screen and (max-width:1000px) {
 	.section {
 		padding:10rem 5rem;
