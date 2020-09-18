@@ -15,14 +15,14 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <nav class="navbar">
-      <h1 class="navbar__logo"><a class="navbar__link" href="#"><img class="logo" src="img/client/logo.png" alt="Alfra Export"></a></h1>
+      <h1 class="navbar__logo"><a class="navbar__link" href="#header"><img class="logo" src="img/client/logo.png" alt="Alfra Export"></a></h1>
       <div>
-        <a class="navbar__link" href="#">Réalisations</a>
-        <a class="navbar__link" href="#">Services</a>
-        <a class="navbar__link" href="#">Gamme</a>
-        <a class="navbar__link" href="#">Contacts</a>
+        <a class="navbar__link" href="#our-work">Réalisations</a>
+        <a class="navbar__link" href="#features">Services</a>
+        <a class="navbar__link" href="#gamme">Gamme</a>
+        <a class="navbar__link" href="#contact">Contacts</a>
       </div>
     </nav>
     <section class="hero-banner section">
@@ -32,7 +32,7 @@
     </section>
   </header>
 
-  <section class="section our-work">
+  <section class="section our-work" id="our-work">
     <h2 class="h2-like">Nos projets en cours</h2>
     <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe labore minus similique odit
       architecto sit at ab explicabo ut, molestias incidunt harum vitae ullam nulla debitis, ipsum reprehenderit nobis
@@ -67,7 +67,7 @@
     </ul>
   </section>
 
-  <section class="features section">
+  <section class="section features" id="features">
     <h2 class="h2-like">Nos Services</h2>
     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolores quo adipisci optio nobis
       voluptas sequi error deserunt. Libero animi id corporis. Facilis perferendis asperiores, veniam vero doloremque
@@ -95,7 +95,7 @@
     </ul>
   </section>
 
-  <section class="section gamme">
+  <section class="section gamme" id="gamme">
     <h2 class="h2-like">Notre gamme</h2>
     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolores quo adipisci optio nobis
       voluptas sequi error deserunt. Libero animi id corporis. Facilis perferendis asperiores, veniam vero doloremque
@@ -127,16 +127,28 @@
     <!-- end Swiper -->
   </section>
 
-  <section class="section contact">
+  <section class="section contact" id="contact">
     <h2 class="h2-like">Nous contacter</h2>
-    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, officiis possimus consequatur ullam commodi dolorem autem assumenda cumque corrupti eos debitis, cum eligendi optio beatae iure quisquam, hic eaque pariatur?</p>
     <hr>
-    <form class="contact__form" action="#">
-      <input class="contact__email" type="email" placeholder="Email">
-      <a class="contact__btn btn"href="#">Subscribe Now</a>
-    </form>
+    <div class="contact__details">
+      <div class="contact__box">
+        <i class="contact__icon fas fa-phone-alt"></i>
+        <p class="contact__text">(+33)6.20.31.64.39</p>
+      </div>
+      <div class="contact__box">
+        <i class="contact__icon fas fa-clock"></i>
+        <p class="contact__text">Du Lundi au vendredi</p>
+        <p class="contact__text">08:00-12:30 / 13:30-18:00</p>
+      </div>
+      <div class="contact__box">
+        <i class="contact__icon fas fa-envelope"></i>
+        <p class="contact__text">contact@alfraexport.com</p>
+      </div>
+    </div>
   </section>
-
+  <footer>
+    <p>designed by <span>Virginie Bouvarel </span>©2020</p>
+  </footer>
 
   <!-- swiper.js -->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>

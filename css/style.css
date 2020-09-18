@@ -29,7 +29,7 @@ ul, li {
 a {
 	text-decoration:none;
 	color:inherit;
-	opacity:0.8;
+	opacity:0.7;
 }
 a:hover {
 	opacity:1;
@@ -40,6 +40,7 @@ a:hover {
 	text-transform:uppercase;
 	background-color:var(--green-light);
 	font-weight:800;
+	opacity:1;
 }
 .section {
 	display:flex;
@@ -100,7 +101,8 @@ hr {
 }
 .navbar__link {
 	margin:0 1.5rem;
-	color:var(--green);;
+	color:var(--green);
+	font-weight:bold;
 }
 .hero-banner {
 	color:#fff;
@@ -174,8 +176,6 @@ hr {
 }
 
 
-
-
 /* SECTION FEATURES */
 .features {
 	background-color: #f7f7f7;
@@ -229,30 +229,42 @@ hr {
 /*SECTION CONTACT */
 .contact {
 	background-color: #f7f7f7;
+	padding-bottom:30rem;
 }
-.contact__form {
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	flex-wrap:wrap;
-	max-width:80rem;
+.contact__details {
+	margin-top:2rem;
+	max-width:1000px;
 	width:80%;
+	display:flex;
+	justify-content: space-between;
 }
-.contact__email {
-	padding:1.5rem;
-	flex:1;
-	margin-right:3rem;
-	font-size:1.8rem;
-	color:#555;
+.contact__box {
+	width:30%;
+	text-align:center;
+	line-height:2;
 }
-.contact__btn {
-	padding:1.8rem 4.2rem;
-} 
+.contact__icon {
+	color:var(--green-light);
+	font-size:2rem;
+	margin-bottom:2rem;
+}
 
+/* FOOTER */
+
+footer {
+	background-color: #f7f7f7;
+	padding:2rem 0 4rem;
+	text-align:center;
+	font-size:1.2rem;
+	font-weight: bold;
+}
+footer span {
+	color:var(--green-light);
+}
 /*RWD*/
 
 @media screen and (max-width:1000px) {
-	.section {
+	.section:not(.contact) {
 		padding:10rem 5rem;
 	}
 	.hero-banner {
@@ -274,9 +286,12 @@ hr {
 	.reviews__author {
 		font-size:1.4rem;
 	}
+	.contact__details {
+		width:100%;
+	}
 }
 @media screen and (max-width:800px) {
-	.section {
+	.section:not(.contact) {
 		padding: 8rem 3rem;
 	}
 	.hero-banner {
@@ -304,14 +319,17 @@ hr {
 	.hero-banner__btn {
 		padding:1.5rem 4rem;
 	}
-	.contact__email {
-		flex-basis:100%;
-		margin:0 0 2rem 0;
-	}
 	.swiper-container {
 		width:90%;
 	}
-
+	.contact__details {
+		flex-direction:column;
+		align-items: center;
+	}
+	.contact__box {
+		width:100%;
+		margin-bottom:4rem;
+	}
 	
 }
 @media screen and (max-width:700px) {
@@ -331,6 +349,9 @@ hr {
 	}
 	.swiper-slide__title {
 		font-size:1.4rem;
+	}
+	.contact {
+		padding:12.5rem 0 20rem;
 	}
 }
 @media screen and (max-width:380px) {
