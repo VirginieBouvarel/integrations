@@ -262,16 +262,17 @@ footer span {
 	color:var(--green-light);
 }
 /*RWD*/
-
+@media screen and (max-width:1100px) {
+	.grid__item {
+		width:100%;
+	}
+}
 @media screen and (max-width:1000px) {
 	.section:not(.contact) {
 		padding:10rem 5rem;
 	}
 	.hero-banner {
 		padding-top:20rem;
-	}
-	.grid__item {
-		width:100%;
 	}
 	.features__item {
 		flex-basis:70%;
