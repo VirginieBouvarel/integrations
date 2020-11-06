@@ -1,6 +1,6 @@
 # Vokalia
 
-Objectif: Réalisation du maquette simple avec une contrainte de temps
+Objectif: Réalisation d'une maquette simple avec une contrainte de temps
 
 > Technos: HTML/CSS
 
