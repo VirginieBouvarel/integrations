@@ -197,9 +197,12 @@ h1, h2, h3 {
 }
 
 /* SECTION USAGE */
+
 .usage__illu {
 	background-color: #fff;
 	padding: 2.4rem 0 0 2.4rem;
+	margin-top: 11rem;
+	position:relative;
 }
 .usage__rust-pill {
 	background: #5D64D2;
@@ -212,15 +215,8 @@ h1, h2, h3 {
 	font-size: 1.2rem;
 	line-height: 150%;
 	color: #FFFFFF;
-	margin-bottom: 2.4rem;
 }
-/* .usage__code {
-	font-family: 'Hack';
-	font-size: 1.5rem;
-	line-height: 130%;
-	color: #454658;
-	white-space: pre-wrap; 
-} */
+
 code[class*="language-"], pre[class*="language-"] {
 	font-family: 'Hack';
 	font-size: 1.5rem;
@@ -228,6 +224,9 @@ code[class*="language-"], pre[class*="language-"] {
 	color: #454658;
 	white-space: pre-wrap; 
 }
+
+
+
 @media screen and (max-width: 1025px) {
 	.header {
 		padding-bottom: 6.15rem;
@@ -271,7 +270,7 @@ code[class*="language-"], pre[class*="language-"] {
 	.cta__github {
 		margin-bottom: 1.4rem;
 	}
-	.usage__code {
+	code[class*="language-"], pre[class*="language-"] {
 		font-size: 1rem;
 	}
 
