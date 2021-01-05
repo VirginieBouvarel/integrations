@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icons fontawesome -->
     <script src="https://kit.fontawesome.com/0ac17cb549.js"></script>
+    <!-- font code -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css">
     <!-- reset css-->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- prism.js cdn-->
+    <link rel="stylesheet" href="css/prism.css"  />
     <!-- custom styles-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -56,9 +60,52 @@
                 </div> 
             </div>
         </section>
+
+        <section class="usage">
+            <div class="container-small">
+
+                <header class="head usage__head">
+                    <h2 class="head__title">Usage</h2>
+                    <p class="head__desc">Initialize EKS (AWS Kubernetes) and ECR (AWS container registry) on AWS</p>
+                </header>
+
+                <div class="usage__illu">
+                    <p class="usage__rust-pill">Rust</p>
+                    <pre><code class="language-rust">
+let engine = Engine::new(
+    context, // parameters
+    local_docker, // initialize Docker as a Build Platform
+    ecr, // initialize Elastic Container Registry
+    aws, // initialize AWS account
+    cloudflare, // initialize Cloudflare as DNS Nameservers
+);
+
+let session = match engine.session() {
+    Ok(session) =&gt; session, // get the session
+    Err(config_error) =&gt; panic!("configuration error {:?}", config_error),
+};
+
+let mut tx = session.transaction();
+
+// create EKS (AWS managed Kubernetes cluster)
+tx.create_kubernetes(&eks);
+
+// create the infrastructure and wait for the result
+match tx.commit() { 
+    TransactionResult::Ok =&gt; println!("OK"),
+    TransactionResult::Rollback(commit_err) =&gt; println!("ERROR but rollback OK"), 
+    TransactionResult::UnrecoverableError(commit_err, rollback_err) =&gt; println!("FATAL ERROR")
+};
+                    </code></pre>
+                </div> 
+            </div>
+        </section>
     </main>
-    <!-- Place this tag in your head or just before your close body tag. -->
+    <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- prism.js -->
+    <script src="js/prism.js"></script>
+    <!-- custom JS -->
     <script src="js/script.js"></script>
 </body>
 

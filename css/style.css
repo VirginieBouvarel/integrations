@@ -196,8 +196,38 @@ h1, h2, h3 {
 	padding:0 2.25rem;
 }
 
-
-
+/* SECTION USAGE */
+.usage__illu {
+	background-color: #fff;
+	padding: 2.4rem 0 0 2.4rem;
+}
+.usage__rust-pill {
+	background: #5D64D2;
+	border-radius: 3px;
+	width:50px;
+	padding: 0.4rem 0.8rem;
+	text-transform:uppercase;
+	font-family: var(--f-main);
+	font-weight: bold;
+	font-size: 1.2rem;
+	line-height: 150%;
+	color: #FFFFFF;
+	margin-bottom: 2.4rem;
+}
+/* .usage__code {
+	font-family: 'Hack';
+	font-size: 1.5rem;
+	line-height: 130%;
+	color: #454658;
+	white-space: pre-wrap; 
+} */
+code[class*="language-"], pre[class*="language-"] {
+	font-family: 'Hack';
+	font-size: 1.5rem;
+	line-height: 130%;
+	color: #454658;
+	white-space: pre-wrap; 
+}
 @media screen and (max-width: 1025px) {
 	.header {
 		padding-bottom: 6.15rem;
@@ -209,7 +239,7 @@ h1, h2, h3 {
 
 @media screen and (max-width:770px) {
 	.container-small {
-		width:100%;
+		width:92%;
 	}
 	.header__title span {
 		margin: 0;
@@ -241,6 +271,8 @@ h1, h2, h3 {
 	.cta__github {
 		margin-bottom: 1.4rem;
 	}
-
+	.usage__code {
+		font-size: 1rem;
+	}
 
 }
