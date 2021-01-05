@@ -1,0 +1,105 @@
+/* GLOBALS */
+
+/*Fonts*/
+
+/** San Francisco **/
+@font-face {
+	font-family: "SanFrancisco";
+	src: url("../fonts/san-francisco/SF-UI-Text-Regular.otf");
+	font-weight: 400;
+}
+  
+@font-face {
+	font-family: "SanFrancisco";
+	src: url("../fonts/san-francisco/SF-UI-Text-Medium.otf");
+	font-weight: 500;
+}
+  
+@font-face {
+	font-family: "SanFrancisco";
+	src: url("../fonts/san-francisco/SF-UI-Text-Semibold.otf");
+	font-weight: 600;
+}
+  
+@font-face {
+	font-family: "SanFrancisco";
+	src: url("../fonts/san-francisco/SF-UI-Text-Bold.otf");
+	font-weight: 700;
+}
+
+/** HK Grotesk **/
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('../fonts/hk-grotesk/hkgrotesk-bold-webfont.woff2') format('woff2'),
+         url('../fonts/hk-grotesk/hkgrotesk-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('../fonts/hk-grotesk/hkgrotesk-regular-webfont.woff2') format('woff2'),
+         url('../fonts/hk-grotesk/hkgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+	--f-main:'SanFrancisco';
+	--f-title:'hk_grotesk';
+}
+
+html {
+	font-size:62.5%; /* 1rem = 10px */
+	box-sizing:border-box;
+}
+
+*, *:before, *:after {
+	box-sizing:inherit;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: var(--f-main);
+	font-size:1.6rem;
+	color:var(--c-black);
+	
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+a {
+	text-decoration:none;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+/* HEADINGS AND FONTS */
+h1, h2, h3 {
+	margin:0;
+}
+
+/* LAYOUTS */
+ 
+.container {
+	width:83%;
+	max-width:1123px;
+	margin:0 auto;
+}
+
+
+/* COMPONENTS */
+
+
+/* SECTIONS STYLES */
+
+
