@@ -251,10 +251,15 @@ code[class*="language-"], pre[class*="language-"] {
 }
 .key {
 	margin-bottom: 9.7rem;
+	width:48%;
 	max-width:428px;
 }
-.key:first-child {
+.key:nth-child(1) {
 	max-width:408px;
+	margin-right: 2.4rem;
+}
+.key:nth-child(3) {
+	margin-right: 2.4rem;
 }
 .key__img {
 	height:159px;
@@ -310,6 +315,7 @@ code[class*="language-"], pre[class*="language-"] {
 		margin: 0;
 	}
 }
+
 @media screen and (max-width: 500px) {
 	.header {
 		padding-bottom: 0;
@@ -339,5 +345,15 @@ code[class*="language-"], pre[class*="language-"] {
 	code[class*="language-"], pre[class*="language-"] {
 		font-size: 1rem;
 	}
+
+	.key {
+		width:95%;
+		margin:0 auto 9.7rem;
+	}
+	.key:nth-child(1),
+	.key:nth-child(3) {
+		margin: 0 auto 9.7rem;
+	}
+
 
 }
