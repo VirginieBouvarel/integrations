@@ -46,8 +46,18 @@
 
 /* GLOBALS */
 :root {
+	/* fonts*/
 	--f-main:'SanFrancisco';
 	--f-title:'hk_grotesk';
+	--f-code:'Hack';
+	/*colors*/
+	--c-bg-body:#F9F9FD;
+	--c-white:#fff;
+	--c-dark-gray:#8686B3;
+	--c-dark:#151B2B;
+	--c-black: #454658;
+	--c-light-blue:#6578c0;
+	--c-blue:#5d64d2;
 }
 
 html {
@@ -62,10 +72,7 @@ html {
 }
 
 body {
-	/* font-family: var(--f-main);
-	font-size:1.6rem; */
-	background: #F9F9FD;
-
+	background: var(--c-bg-body);
 }
 
 img {
@@ -108,7 +115,7 @@ h1, h2, h3 {
 	font-weight: 600;
 	font-size: 1.4rem;
 	line-height: 150%;
-	color: #FFFFFF;
+	color: var(--c-white);
 	border-radius:3px;
 	max-width:195px;
 }
@@ -116,11 +123,11 @@ h1, h2, h3 {
 	margin-right: 0.7rem;
 }
 .cta__github {
-	background: rgba(69, 70, 88, 1);
+	background: var(--c-black);
 	margin-right: 2.4rem;
 }
 .cta__discord {
-	background: rgba(101, 120, 192, 1);
+	background: var(--c-light-blue);
 }
 
 .head {
@@ -134,19 +141,19 @@ h1, h2, h3 {
 	font-weight: 800;
 	font-size: 3.2rem;
 	line-height: 110%;
-	color: #454658;
+	color: var(--c-black);
 	margin-bottom: 2.4rem;
 }
 .head__desc {
 	font-family:var(--f-main);
 	font-size: 1.6rem;
 	line-height: 150%;
-	color: #454658;
+	color: var(--c-black);
 }
 /* HEADER */
 .header {
-	background: #151B2B;
-	color:#fff;
+	background: var(--c-dark);
+	color: var(--c-white);
 	padding-bottom: 10.15rem;
 }
 .header__content {
@@ -173,14 +180,14 @@ h1, h2, h3 {
 	font-weight: 600;
 	font-size: 2.5rem;
 	line-height: 140%;
-	color: #FFFFFF;
+	color: var(--c-white);
 	margin: 2.4rem 0;
 }
 .header__desc {
 	font-family: var(--f-main);
 	font-size: 1.6rem;
 	line-height: 150%;
-	color: #8686B3;
+	color: var(--c-dark-gray);
 	padding:0 0.7rem;
 }
 .header .ctas {
@@ -204,7 +211,7 @@ h1, h2, h3 {
 }
 
 .usage__illu {
-	background-color: #fff;
+	background-color: var(--f-white);
 	padding: 2.4rem 0 0 2.4rem;
 	margin-bottom:4.8rem;
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
@@ -220,14 +227,14 @@ h1, h2, h3 {
 	font-weight: bold;
 	font-size: 1.2rem;
 	line-height: 150%;
-	color: #FFFFFF;
+	color: var(--c-white);
 }
 
 code[class*="language-"], pre[class*="language-"] {
-	font-family: 'Hack';
+	font-family: var(--f-code);
 	font-size: 1.5rem;
 	line-height: 130%;
-	color: #454658;
+	color: var(--c-black);
 	white-space: pre-wrap; 
 }
 
@@ -267,14 +274,14 @@ code[class*="language-"], pre[class*="language-"] {
 	font-weight: bold;
 	font-size: 2.4rem;
 	line-height: 110%;
-	color: #454658;
+	color: var(--c-black);
 	margin: 2.4rem 0;
 }
 .key__text {
 	font-family: var(--f-main);
 	font-size: 1.6rem;
 	line-height: 150%;
-	color: #454658;
+	color: var(--c-black);
 }
 .key__text:first-of-type {
 	margin-bottom: 2.4rem;
@@ -288,7 +295,7 @@ code[class*="language-"], pre[class*="language-"] {
 	font-size: 1.2rem;
 	line-height: 130%;
 	text-transform: uppercase;
-	color: #5D64D2;
+	color: var(--c-blue);
 }
 
 
@@ -308,7 +315,7 @@ code[class*="language-"], pre[class*="language-"] {
 
 /* FOOTER */
 footer {
-	background: #151B2B;
+	background: var(--c-dark);
 	height:170px;
 }
 
