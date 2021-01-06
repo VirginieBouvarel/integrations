@@ -1,6 +1,4 @@
-/* GLOBALS */
-
-/*Fonts*/
+/* FONTS */
 
 /** San Francisco **/
 @font-face {
@@ -46,7 +44,7 @@
     font-style: normal;
 }
 
-
+/* GLOBALS */
 :root {
 	--f-main:'SanFrancisco';
 	--f-title:'hk_grotesk';
