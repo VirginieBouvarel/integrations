@@ -294,6 +294,25 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 
+/* SECTION PARTNERS */
+.partners__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width:700px;
+	margin:5rem auto 10rem;
+}
+.partners__item {
+	text-align:center;
+	width:30%;
+}
+
+
+/* FOOTER */
+footer {
+	background: #151B2B;
+	height:170px;
+}
 
 
 
@@ -313,6 +332,18 @@ code[class*="language-"], pre[class*="language-"] {
 	}
 	.header__title span {
 		margin: 0;
+	}
+	.key {
+		width:95%;
+		margin:0 auto 9.7rem;
+	}
+	.key:nth-child(1),
+	.key:nth-child(3) {
+		margin: 0 auto 9.7rem;
+	}
+	.key__img {
+		display: block;
+		margin:0 auto;
 	}
 }
 
@@ -345,15 +376,11 @@ code[class*="language-"], pre[class*="language-"] {
 	code[class*="language-"], pre[class*="language-"] {
 		font-size: 1rem;
 	}
-
-	.key {
-		width:95%;
-		margin:0 auto 9.7rem;
+	.partners__list {
+		flex-direction:column;
 	}
-	.key:nth-child(1),
-	.key:nth-child(3) {
-		margin: 0 auto 9.7rem;
+	.partners__item {
+		width:100%;
+		margin-bottom: 6.4rem;
 	}
-
-
 }
