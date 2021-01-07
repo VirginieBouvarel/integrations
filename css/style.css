@@ -75,6 +75,10 @@ body {
 	background: var(--c-bg-body);
 }
 
+h1, h2, h3 {
+	margin:0;
+}
+
 img {
 	max-width:100%;
 	height:auto;
@@ -88,10 +92,25 @@ ul li {
 	list-style-type: none;
 }
 
-/* HEADINGS AND FONTS */
-h1, h2, h3 {
-	margin:0;
+/* ANIMATIONS */
+
+.animated {
+	animation:fadeInUp 2s ease-in-out;
 }
+
+@keyframes fadeInUp {
+    from {
+		transform: translate3d(0,40px,0);
+		opacity:0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+
 
 /* LAYOUTS */
  
@@ -389,3 +408,5 @@ footer {
 		margin-bottom: 6.4rem;
 	}
 }
+
+
