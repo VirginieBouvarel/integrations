@@ -96,12 +96,13 @@ ul li {
 
 .animated {
 	animation:fadeInUp 2s forwards ease-in-out;
-	opacity:0;
+	
 }
 
 @keyframes fadeInUp {
     from {
-		transform: translate3d(0,100px,0);
+		transform: translate3d(0,200px,0);
+		opacity:0;
     }
 
     to {
