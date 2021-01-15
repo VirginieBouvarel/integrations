@@ -1,0 +1,37 @@
+*{
+	box-sizing:border-box;
+}
+
+body {
+    background-color: darkorange;
+	font-size:16px;
+	color:rgba(0,0,0,0.87);
+	line-height:1.8;
+	font-family:serif;
+	margin:0;
+}
+.imgbanner img{
+    width: 100%;
+    height: auto;
+  
+}
+.topbarnav{
+	position:center;
+	background-color:darkorange;
+}
+.topbarnav a{
+    position: center;
+	color:white;
+	padding: 0 53px;
+    text-decoration: none;
+}
+.topbarnav a:hover{
+    display: inline;
+	background-color:pink;
+}
+h1{
+    font-family: "Amatic SC", serif;
+}
+h2{
+    font-family: "Amatic SC", serif;
+}
