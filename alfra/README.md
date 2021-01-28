@@ -20,4 +20,4 @@ Dans ce projet j'ai appris...
 ## Versions mobile et desktop
 <br>
 
-<img  style="vertical-align:top" alt="mobile design" src="./src/preview-mobile.jpg" width="150px"/><!-- --> <img  style="vertical-align:top" alt="desktop design" src="./src/preview-desktop.jpg" width="150px"/>  
+<img align="left" style="margin-right:20px" alt="mobile design" src="./src/preview-mobile.jpg" width="150"/> <img align="left" alt="desktop design" src="./src/preview-desktop.jpg" width="450"/>  
