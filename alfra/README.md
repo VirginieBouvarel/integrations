@@ -7,7 +7,7 @@
 
 ## Détails
 
-> Technos utilisées : HTML/CS/
+> Technos utilisées : HTML/CSS
 
 Pour ce projet mon objectif était de réaliser une landing page pour la société Alfra Export dont le pdg est une de mes connaissances. Cette intégration est une ébauche pour permettre au client d'avoir une idée du type de sections possibles et des contenus qui devront être crées et rassemblés pour établir un réel site à l'avenir.<br><br>
 
@@ -19,4 +19,4 @@ Dans ce projet j'ai appris...
 
 ## Versions mobile et desktop
 <br>
-<img  style="vertical-align:top" alt="mobile design" src="./src/preview-mobile.jpg" width="150px"> &nbsp;&nbsp;<img  style="vertical-align:top" alt="desktop design" src="./src/preview-desktop.jpg" width="450px"> 
+<img  style="vertical-align:top" alt="mobile design" src="./src/preview-mobile.jpg" width="150px"> &nbsp;&nbsp;<img  style="vertical-align:top" alt="desktop design" src="./src/preview-desktop.jpg" width="400px"> 
